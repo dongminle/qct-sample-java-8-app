@@ -8,12 +8,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.1.1.RELEASE</spring.version>
     </properties>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.3.RELEASE</version>
-        <relativePath/>
-    </parent>
+    <!-- Spring Boot parent temporarily removed for Java 25 compilation, will be re-added in Step 6 -->
     <build>
         <plugins>
             <plugin>
@@ -21,8 +16,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <release>25</release>
                 </configuration>
             </plugin>
         </plugins>
